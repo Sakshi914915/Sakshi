@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Example Form</title>
+</head>
+<body>
+  <h2>Sample Form</h2>
+
+  <form action="/submit" method="post">
+    <!-- required text input with a "name" attribute -->
+    <label for="fullname">Full name (required):</label><br />
+    <input id="fullname" name="fullname" type="text" required placeholder="Enter your name" /><br /><br />
+
+    <!-- input with a preset "value" and a name -->
+    <label for="email">Email (has value):</label><br />
+    <input id="email" name="email" type="email" value="user@example.com" required /><br /><br />
+
+    <!-- disabled input — shows a value but will NOT be submitted -->
+    <label for="ref">Reference (disabled):</label><br />
+    <input id="ref" name="reference" type="text" value="REF-2025-001" disabled /><br />
+    <small>Note: disabled inputs are not sent with the form.</small><br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
