@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="lab1.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+        .internal-box {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 2px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: rgb(0, 225, 255); text-align:center;">Inline CSS Heading</h1>
+
+    <h2>Internal CSS Heading</h2>
+
+    <div class="internal-box">
+        This box is styled using internal CSS.
+    </div>
+
+    <p class="external-text">
+        This paragraph will be styled using external CSS from style.css.
+    </p>
+
+</body>
+</html>
