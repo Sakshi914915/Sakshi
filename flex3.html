@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            color: brown;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas: 
+            "header header"
+            "menu content"
+            "footer footer";
+            gap: 3px;
+            background-color: rgb(13, 160, 223);
+            padding: 5px;
+        }
+        .container div{
+            background-color: azure;
+            padding: 10px;
+        }
+        .container div.header{
+            rid-area: ;
+        }
+        .container div.menu {
+            grid-area: menu;
+        }
+        .container div.content {
+            grid-area: content;
+  
+        }
+    
+        .container div.footer {
+        grid-area: footer;
+        text-align: center;  
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="h1"><h1 align="center">Grid Layout</h1></div>
+    <h3 align="center">ABES Engineering College</h3>
+    <h3 align="center">MCA Department</h3>
+    <div class="container">
+    <div class="header"><img src="https://www.abes.ac.in/assets/2.jpg" width="250" height="180"> <h3>Welcome to ABESEC</h3></div>
+    <div class="menu"><a href="https://www.abes.ac.in/">ABES</a></div>
+    <div class="content">
+        <table border="0" align="center">
+            <tr><td>Name</td>
+            <td><input type="text" name="name"></td></tr>
+            <tr><td>Email</td>
+            <td><input type="email" name="email"></td></tr>
+            <tr><td>Password</td>
+            <td><input type="password" name="password"></td></tr>
+            <tr><td align="center"><input type="button" value="login"> </td></tr>
+        </table>
+    </div>
+    <div class="footer"><h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus repudiandae eius consequuntur sequi fuga ad nulla, blanditiis ut repellendus natus.</h4></div>
+
+    </div>
+</body>
+</html>
