@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(220, 216, 211);
+        }
+        .img1{
+            height: 100vh;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5lH5qNLRlNzklIF0-8O6IPgchwtI3kksnhA&s) no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content h3{
+            color: white;
+            font-size: 40px;
+            line-height: 1.5;
+            font-weight: 5;
+        }
+        .content p{
+            color: white;
+            font-weight: 100;
+        }
+        .button1{
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .button1 .btn1{
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px 35px;
+            font-size: 15px;
+            background-color: blueviolet;
+            color: white;
+        }
+        .button1 .btn2{
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px 35px;
+            font-size: 15px;
+            color: white;
+            border: 2px solid white;
+        }
+        .img2{
+            background-color: white;
+            height: 130vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            
+        }
+        .img2 h3{
+            align-items: left;
+            margin-left: 10px;
+            color: black;
+            font-size: 20px;
+        }
+        .img2 p{
+            color: grey;
+        }
+        .button2{
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .button2 .btn1{
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px 35px;
+            font-size: 15px;
+            background-color: blueviolet;
+            color: white;
+        }
+        .img3{
+            background-color: white;
+            height: 130vh;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .img3 h3{
+            color: black;
+            font-size: 20px;
+        }
+        .img3 p{
+            color: grey;
+        }
+        .img3 .button3{
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .img3 .button3 .btn1{
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px 35px;
+            font-size: 15px;
+            background-color: blueviolet;
+            color: white;
+            margin-left: 20px;
+        }
+        .img3 .pht1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .image4{
+            margin-bottom: 0%;
+            height: 70vh;
+            background: url(https://images.unsplash.com/photo-1516394531575-d9bbfc59ef97?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMGJsdWUlMjB3YXRlcnxlbnwwfHwwfHx8MA%3D%3D) ;
+        }
+        .image4 h2{
+            padding: 30px;
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            line-height: 1.5;
+            font-weight: 5;
+        }
+        .image4 p{
+            color: white;
+            font-weight: 100;
+            text-align: center;
+        }
+        .image4 .button4{
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .image4 .button4 .btn1{
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px 35px;
+            font-size: 15px;
+            background-color: blueviolet;
+            color: white;
+            margin-left: 560px;
+        }
+        .img5{
+            gap: 0;
+            background-color: white;
+            height: 50vh;
+        }
+        .img5 h2{
+            padding: 30px;
+            margin-top: 0;
+            color: black;
+            font-size: 40px;
+            line-height: 1.5;
+            font-weight: 5;
+            text-align: center;
+        }
+        .img5 p{
+            color: grey;
+            font-weight: 100;
+            text-align: center;
+        }
+        .img5 .button5{
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .img5 .button5 .btn1{
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px 35px;
+            font-size: 15px;
+            background-color: blueviolet;
+            color: white;
+            margin-left: 540px;
+        }
+        .img6{
+            height: 130vh;
+            background: url(https://as1.ftcdn.net/jpg/00/83/47/32/1000_F_83473270_RLCLPd7UJuTjkZA671uwfk9Gz90JpTU6.jpg) no-repeat center center/cover;
+        }
+        .img7{
+            margin-top: 0%;
+            background-color: black;
+            height: 20vh;
+        }
+        .img7 h2{
+            color: white;
+            line-height: 1.5;
+            font-size: 30px;
+            font-weight: 5px;
+            text-align: center;
+            padding: 40px;
+        }
+        .img7 p{
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="img1">
+        <div class="content">
+            <h3>We Change Everything<br> WordPress</h3><br>
+            <p>This is the only Word Press theme you will ever want to use.</p><br>
+            <div class="button1">
+                <a href="" class="btn1">READ MORE</a><br><br><br><br>
+                <a href="" class="btn2">DOWNLOAD NOW</a>
+            </div>
+        </div>
+    </section>
+    <section class="img2">
+        <img src="https://www.techadvisor.com/wp-content/uploads/2023/11/best_wordpress_themes_2020.jpg?quality=50&strip=all&w=1024" width="600px" height="400px">
+        <h3>SEO Friendly</h3><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit voluptatum deleniti repudiandae quam iure ea similique! Modi, nesciunt? Earum enim repellendus dolorum accusantium quasi non totam voluptatibus voluptate dicta? Ipsam suscipit fuga laboriosam nemo enim cupiditate id, labore officia ratione.</p>
+        <div class="button2">
+            <a href="" class="btn1">READ MORE</a>
+        </div><br>
+    </section>
+    <section class="img3">
+        <h3>Portfolio Section</h3><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ex corrupti sed deserunt incidunt architecto dicta consequatur fugiat totam voluptatem sint, quia harum officiis ea quisquam magnam. Quasi nulla nisi asperiores quisquam! Ea repellat adipisci praesentium, nostrum aliquid facere quia aut voluptatem minima, exercitationem vero libero sint mollitia odio, vel optio illum molestias iure. Aperiam ratione, nulla, sapiente quisquam reprehenderit necessitatibus beatae, dolore animi enim quibusdam doloribus voluptatum officiis. Architecto tempora eveniet incidunt eligendi fugiat nulla atque velit cumque sed.</p>
+        <br><br>
+        <div class="button3">
+            <a href="" class="btn1">SEE IT IN ACTION</a>
+        </div><br>
+        <div class="pht1">
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-macbook-preview.jpg" width="650px" height="450px">
+        </div>
+    </section>
+    <section class="image4">
+        <h2>Small Parallax Section</h2><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fugit beatae ipsa maiores nobis! Iure neque unde officiis accusamus recusandae quos modi aperiam cupiditate earum. Praesentium quaerat saepe accusantium reiciendis.</p><br>
+        <div class="button4">
+            <a href="" class="btn1">MORE INFO</a>
+        </div><br>
+    </section>
+    <section class="img5">
+        <h2>Limitless Options</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo recusandae repudiandae, accusantium necessitatibus praesentium voluptatum eveniet provident. Voluptate reiciendis inventore porro repellendus totam, architecto a consequuntur officiis animi esse eius adipisci, assumenda blanditiis aliquid fuga? Deserunt quae quasi quod!</p>
+        <br>
+        <div class="button5">
+            <a href="" class="btn1">DOWNLOAD NOW</a>
+        </div>
+    </section>
+    <section class="img6"> </section>
+    <section class="img7">
+        <h2>Our Latest Project</h2>
+        <p>Here is our latest projects. you'll love them!</p>
+    </section>
+    <section class="img7">
+
+    </section>
+</body>
+</html>
