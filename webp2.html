@@ -11,6 +11,32 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(220, 216, 211);
         }
+        header {
+        background-color: #000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+        height: 7vh;
+        }
+        .nav1 {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        }
+
+        nav a:hover {
+        color: plum;
+        }
         .img1{
             height: 100vh;
             background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5lH5qNLRlNzklIF0-8O6IPgchwtI3kksnhA&s) no-repeat center center/cover;
@@ -255,11 +281,35 @@
             color: white;
             text-align: center;
         }
+        .img10{
+            color: white;
+            height: 30vh;
+            background-color: black;
+        }
+        .img10 p{
+            padding: 80px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+        
     
 
     </style>
 </head>
 <body>
+    <header>
+        <div class="nav1">
+            <h3>Shapely Demo</h3>
+        </div>
+        <nav>
+            <a href="">HOME</a>
+            <a href="">BLOG</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">LEVELS</a>
+        </nav>
+    </header>
     <section class="img1">
         <div class="content">
             <h3>We Change Everything<br> WordPress</h3><br>
@@ -329,6 +379,10 @@
         <img src="https://thumbs.dreamstime.com/b/englishman-detective-male-portrait-englishman-detective-retro-style-male-portrait-adult-man-black-suit-vintage-hat-105324903.jpg">
         <h4>John Doe</h4>
     </section>
+    <section class="img10">
+        <p>Theme by Colorlib Poweredby Wordpress </p>
+    </section>
+    
    
 </body>
 </html>
