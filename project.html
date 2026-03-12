@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Box</title>
+    <a href="C:\Users\ADMIN\Desktop\HTML tutorial\beatbox\beat box">  </a>
+    <link rel="icon" href="https://m.media-amazon.com/images/I/31B2Nyzd8XL.png">
+
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #111;
+      }
+      header {
+        background-color: #000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+      }
+
+      header img {
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #ff6b9a;
+      }
+      main {
+        text-align: center;
+        padding: 40px 20px;
+        background: url(https://img.freepik.com/free-vector/gradient-music-notes-background_23-2151320190.jpg?semt=ais_hybrid&w=740&q=80);
+        background-size: cover;
+        background-position: center;
+      }
+
+      h2 {
+        color: white;
+        font-size: 28px;
+      }
+
+      .albums, .artists {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 20px;
+      }
+      .album-box {
+        width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255,255,255,0.2);
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        display: block;
+      }
+
+      .album-box img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .artist-box {
+        width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255,255,255,0.3);
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .artist-box img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+        footer {
+        background-color: #000;
+        color: #ccc;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+      <div class="logo">
+        <img src="https://png.pngtree.com/element_our/sm/20180415/sm_5ad31d9b53530.png" alt="logo">
+        Beat Box
+      </div>
+
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="artist.html">Artist</a>
+        <a href="album.html">Album</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Albums</h2>
+      <div class="albums">
+
+        <a class="album-box" href="album1.html">
+          <img src="https://dynamic.brandcrowd.com/template/preview/design/d5de0276-a5d9-41bd-975b-a0eb5044143c?v=4&designTemplateVersion=1&size=design-preview-tall-2x&layout=auto-1-1">
+        </a>
+
+        <a class="album-box" href="album2.html">
+          <img src="https://cdn.pixabay.com/photo/2022/12/30/22/01/music-7687732_1280.png"> 
+        </a>
+
+        <a class="album-box" href="album3.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOeaZAijfNMUtO8CFxUFbYl7_JN8Fdgkup64-AjtZLLfQY7UYH1L5ucWJVY0224UXX_o&usqp=CAU"> 
+        </a>
+
+        <a class="album-box" href="album4.html">
+          <img src="https://play-lh.googleusercontent.com/c5c8sHUZZBBfc1CIj-KXZkjCcTd_yWhuPZy5FzigOJbCwe63LrjMD9418clWfq7iIBs=w600-h300-pc0xffffff-pd">
+        </a>
+
+        <a class="album-box" href="album5.html">
+          <img src="https://source.boomplaymusic.com/group10/M00/06/11/fd7b513ef9014d0e9b7d63442f235b12H3000W3000_464_464.jpg"> 
+        </a>
+
+      </div>
+      <h2 style="margin-top:40px;">Artists</h2>
+      <div class="artists">
+
+        <a class="artist-box" href="artist1.html">
+          <img src="https://artistbookingcompany.com/wp-content/uploads/2024/03/arjit-singh-680x680.png"> 
+        </a>
+
+        <a class="artist-box" href="artist2.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMi7PdZ1-TeT99XnLN75DRlnX97qrHfzFZ2A&s">
+        </a>
+
+        <a class="artist-box" href="artist3.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAo_5ZoajzfPlbAuez9BRHVPeXvXiTTdt0zQ&s">
+        </a>
+      </div>
+    </main>
+    <footer>
+      © 2025 Beat Box Music Player
+    </footer>
+
+</body>
+</html>

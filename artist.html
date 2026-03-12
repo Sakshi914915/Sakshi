@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Artists - Music Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:rgb(32, 31, 31);
+}
+
+.page-title{
+    text-align:center;
+    margin:30px 0;
+    font-size:28px;
+    color:white;
+}
+
+.artist-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:20px;
+    padding:0 40px 40px;
+}
+
+.artist-card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+    text-align:center;
+}
+
+.artist-card:hover{
+    transform:translateY(-6px);
+    background:#1db954;
+    color:white;
+}
+
+.artist-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#ccc;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:bold;
+    color:#555;
+}
+.artist-img img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.artist-card:hover .artist-img{
+    background:white;
+    color:#1db954;
+}
+
+.artist-card h3{
+    margin-bottom:6px;
+}
+
+.artist-card p{
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.song-list{
+    list-style:none;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.song-list li{
+    padding:4px 0;
+    border-bottom:1px solid #eee;
+}
+
+.artist-card:hover .song-list li{
+    border-color:rgba(255,255,255,0.4);
+}
+
+.song-list li:last-child{
+    border-bottom:none;
+}
+
+.btn{
+    display:inline-block;
+    padding:8px 18px;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:14px;
+    background:#111;
+    color:white;
+}
+
+.artist-card:hover .btn{
+    background:white;
+    color:#1db954;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="page-title">Artists</div>
+
+<div class="artist-grid">
+
+    <div class="artist-card">
+        <div class="artist-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6tX9hCKwow6X4T6P5TIK5PP4aaMx_tCcU9A&s"></div>
+        <h3>Arijit Singh</h3>
+        <p>Romantic & Melody King</p>
+        <ul class="song-list">
+            <li>Tum Hi Ho</li>
+            <li>Kesariya</li>
+            <li>Channa Mereya</li>
+            <li>Agar Tum Saath Ho</li>
+        </ul>
+        <a href="#" class="btn"> Follow</a>
+    </div>
+
+    <div class="artist-card">
+        <div class="artist-img"><img src="https://static.iwmbuzz.com/wp-content/uploads/2019/10/neha-kakkar-is-the-best-singer-920x518.jpg"></div>
+        <h3>Neha Kakkar</h3>
+        <p>Pop & Party Queen</p>
+        <ul class="song-list">
+            <li>Dilbar</li>
+            <li>O Saki Saki</li>
+            <li>Aankh Marey</li>
+            <li>Morni Banke</li>
+        </ul>
+        <a href="#" class="btn">Follow</a>
+    </div>
+
+    <div class="artist-card">
+        <div class="artist-img"><img src="https://s.saregama.tech/image/c/m/5/7d/ab/atif-aslam_1535356262.jpg"> </div>
+        <h3>Atif Aslam</h3>
+        <p>Soulful Voice</p>
+        <ul class="song-list">
+            <li>Tera Hone Laga Hoon</li>
+            <li>Tajdar-e-Haram</li>
+            <li>Jeena Jeena</li>
+            <li>Pehli Nazar Mein</li>
+        </ul>
+        <a href="#" class="btn"> Follow</a>
+    </div>
+
+    <div class="artist-card">
+        <div class="artist-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMi7PdZ1-TeT99XnLN75DRlnX97qrHfzFZ2A&s"> </div>
+        <h3>Shreya Ghoshal</h3>
+        <p>Melody Queen</p>
+        <ul class="song-list">
+            <li>Teri Ore</li>
+            <li>Sun Raha Hai</li>
+            <li>Agar Tum Mil Jao</li>
+            <li>Deewani Mastani</li>
+        </ul>
+        <a href="#" class="btn">Follow</a>
+    </div>
+
+</div>
+
+
+</body>
+</html>

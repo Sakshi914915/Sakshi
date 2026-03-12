@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Playlist - Music Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:black;
+}
+
+.page-title{
+    text-align:center;
+    margin:30px 0;
+    font-size:28px;
+    color:white;
+}
+
+.playlist-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:20px;
+    padding:0 40px 40px;
+}
+
+.playlist-card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+    position:relative;
+}
+
+.playlist-card:hover{
+    transform:translateY(-6px);
+    background:#1db954;
+    color:white;
+}
+
+.playlist-card h3{
+    margin-bottom:8px;
+}
+
+.playlist-card p{
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.song-list{
+    list-style:none;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.song-list li{
+    padding:4px 0;
+    border-bottom:1px solid #eee;
+}
+
+.playlist-card:hover .song-list li{
+    border-color:rgba(255,255,255,0.3);
+}
+
+.song-list li:last-child{
+    border-bottom:none;
+}
+
+.btn{
+    display:inline-block;
+    padding:8px 16px;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:14px;
+    margin-right:10px;
+    background:#111;
+    color:white;
+}
+
+.playlist-card:hover .btn{
+    background:white;
+    color:#1db954;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="page-title"> Playlists</div>
+
+<div class="playlist-grid">
+
+    <div class="playlist-card">
+        <h3>Romantic Hits</h3>
+        <p>20 Songs • Love & Melody</p>
+        <ul class="song-list">
+            <li>Tum Hi Ho</li>
+            <li>Kesariya</li>
+            <li>Apna Bana Le</li>
+            <li>Raataan Lambiyan</li>
+        </ul>
+        <a href="#" class="btn"> Play</a>
+        <a href="#" class="btn"> Open</a>
+    </div>
+
+    <div class="playlist-card">
+        <h3>Workout Beats</h3>
+        <p>15 Songs • Energy Boost</p>
+        <ul class="song-list">
+            <li>Zinda</li>
+            <li>Kar Har Maidaan Fateh</li>
+            <li>Apna Time Aayega</li>
+            <li>Sultan Theme</li>
+        </ul>
+        <a href="#" class="btn">Play</a>
+        <a href="#" class="btn"> Open</a>
+    </div>
+
+    <div class="playlist-card">
+        <h3>Sad Songs</h3>
+        <p>18 Songs • Emotional</p>
+        <ul class="song-list">
+            <li>Channa Mereya</li>
+            <li>Agar Tum Saath Ho</li>
+            <li>Bhula Dena</li>
+            <li>Bekhayali</li>
+        </ul>
+        <a href="#" class="btn"> Play</a>
+        <a href="#" class="btn"> Open</a>
+    </div>
+
+    <div class="playlist-card">
+        <h3>Party Beats</h3>
+        <p>22 Songs • Dance & Fun</p>
+        <ul class="song-list">
+            <li>Badtameez Dil</li>
+            <li>Nashe Si Chadh Gayi</li>
+            <li>Gallan Goodiyan</li>
+            <li>Bom Diggy</li>
+        </ul>
+        <a href="#" class="btn">Play</a>
+        <a href="#" class="btn"> Open</a>
+    </div>
+
+</div>
+
+</body>
+</html>

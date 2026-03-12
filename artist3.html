@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist 1 - Beat Box</title>
+  <style>
+    body {
+      background-color: #333;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ff0066;
+      margin-top: 30px;
+    }
+
+    .artist-header {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .artist-header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      padding: 50px;
+    }
+
+    .album {
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+
+    .album:hover {
+      transform: scale(1.03);
+    }
+
+    .album img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .album h3 {
+      text-align: center;
+      color: #ff66a3;
+      margin-top: 15px;
+    }
+
+    .songs {
+      margin-top: 15px;
+    }
+
+    .songs li {
+      list-style: none;
+      margin: 10px 0;
+      background: #262626;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+
+    footer span {
+      color: #ff0066;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="artist-header">
+    <h1>Artist 3</h1>
+    <p>Popular Albums & Songs</p>
+  </div>
+
+  <div class="albums">
+    <!-- Album 1 -->
+    <div class="album">
+      <img src="https://thetravelauthority.co.uk/wp-content/uploads/2024/08/009A4739-1-scaled-1.jpg" alt="Album 1">
+      <h3>Retro Classics</h3>
+      <ul class="songs">
+        <li>
+          1. Roop Tera Mastana  
+          <audio controls>
+            <source src="song1.mp3" type="audio/mpeg">
+          </audio>
+        </li>
+        <li>
+          2. Chura Liya Hai Tumna  
+          <audio controls>
+            <source src="song2.mp3" type="audio/mpeg">
+          </audio>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Album 2 -->
+    <div class="album">
+      <img src="https://www.hindustantimes.com/ht-img/img/2024/12/16/550x309/Diljit_Dosanjh_1734331500392_1734331511195.jpg" alt="Album 3">
+      <h3>Party & Dance Hit</h3>
+      <ul class="songs">
+        <li>
+          1. Kala Chashma
+          <audio controls>
+            <source src="song3.mp3" type="audio/mpeg">
+          </audio>
+        </li>
+        <li>
+          2. Dhemme Dhemme 
+          <audio controls>
+            <source src="song4.mp3" type="audio/mpeg">
+          </audio>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Album 3 -->
+    <div class="album">
+      <img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/06/23/Pictures/chandigarh-performing-hindustan-celebrating-panjabi-leisure-chandigarh_6e10af72-3907-11e6-a032-be579840a028.jpg" alt="Album 3">
+      <h3>Travel/Road Trip</h3>
+      <ul class="songs">
+        <li>
+          1. Khairiyat 
+          <audio controls>
+            <source src="song5.mp3" type="audio/mpeg">
+          </audio>
+        </li>
+        <li>
+          2. Safarnama 
+          <audio controls>
+            <source src="song6.mp3" type="audio/mpeg">
+          </audio>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 <span>BEAT BOX</span> 
+  </footer>
+
+</body>
+</html>
